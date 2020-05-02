@@ -4,6 +4,6 @@
 
 Projects from *"Human–Computer Interaction"* course at Faculty of Computing in Belgrade.
 
-Desktop wireframe: [PDF](), [BMPR]()
+Desktop wireframe: [PDF](https://github.com/jelic98/raf_icr/blob/master/wireframe/desktop.pdf), [BMPR](https://github.com/jelic98/raf_icr/blob/master/wireframe/desktop.bmpr)
 
-Mobile wireframe: [PDF](), [BMPR]()
+Mobile wireframe: [PDF](https://github.com/jelic98/raf_icr/blob/master/wireframe/mobile.pdf), [BMPR](https://github.com/jelic98/raf_icr/blob/master/wireframe/mobile.bmpr)
