@@ -5,4 +5,5 @@
 Projects from *"Human–Computer Interaction"* course at Faculty of Computing in Belgrade.
 
 Desktop wireframe: [PDF](), [BMPR]()
+
 Mobile wireframe: [PDF](), [BMPR]()
