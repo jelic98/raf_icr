@@ -9,3 +9,21 @@
 .bg-accent {
 	background-color: #41a9f4 !important;
 }
+
+.text-accent {
+	color: #41a9f4 !important;
+}
+
+.btn-primary {
+	color: #ffffff !important;
+	background-color: #41a9f4 !important;
+}
+
+.btn-primary:hover {
+	background-color: #0e8fec !important;
+}
+
+.map {
+	height: 300px;
+	width: 100%;
+}
