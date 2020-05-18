@@ -4,6 +4,8 @@
 
 Projects from *"Human–Computer Interaction"* course at Faculty of Computing in Belgrade.
 
+Live website is available [here](https://jelic98.github.io/raf_icr/home.html).
+
 Desktop wireframe: [PDF](https://github.com/jelic98/raf_icr/blob/master/wireframe/desktop.pdf), [BMPR](https://github.com/jelic98/raf_icr/blob/master/wireframe/desktop.bmpr)
 
 Mobile wireframe: [PDF](https://github.com/jelic98/raf_icr/blob/master/wireframe/mobile.pdf), [BMPR](https://github.com/jelic98/raf_icr/blob/master/wireframe/mobile.bmpr)
