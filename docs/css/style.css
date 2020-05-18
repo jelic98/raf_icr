@@ -24,13 +24,33 @@
 	border: None !important;
 }
 
-.map {
-	height: 300px;
-	width: 100%;
-}
-
 html,
 body,
 .full-height {
 	height: 100%;
+}
+
+.btn-circle.btn-md {
+	width: 70px;
+	height: 70px;
+	font-size: 30px;
+	border-radius: 35px;
+}
+
+.btn-circle.btn-lg {
+	width: 120px;
+	height: 120px;
+	font-size: 50px;
+	border-radius: 60px;
+}
+
+.map {
+	position: relative;
+	width: 75%;
+}
+
+.map:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
 }

@@ -51,7 +51,7 @@
 					<li class="text-center mt-3">Telefon: <a href="tel:+38111123456">(+381) 11 123456</a></li>
 					<li class="text-center mt-3">Adresa: <a href="http://maps.google.com/?q=Kneza%20Mihaila%206,%20Beograd">Kneza Mihaila 6, Beograd</a></li>
 				</ul>
-				<div class="map mt-5"></div>
+				<div class="map mt-5 mx-auto"></div>
 			</div>
 		</div>
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -60,7 +60,7 @@
 		<script>
 			function initMap() {
 				var address = {lat: 44.815455, lng: 20.459757};
-				var map = new google.maps.Map(document.getElementsByClassName('map')[0], {zoom: 4, center: address});
+				var map = new google.maps.Map(document.getElementsByClassName('map')[0], {zoom: 15, center: address});
 				var marker = new google.maps.Marker({position: address, map: map});
 			}
 		</script>
