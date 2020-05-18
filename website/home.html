@@ -21,58 +21,79 @@
 					<li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
 				</ul>
 			</div>
-		</nav>	
-		<div class="row">
-			<div class="col-md-9">
-				<nav>
-					<ol class="breadcrumb bg-transparent">
-						<li class="breadcrumb-item"><a href="#">Početna</a></li>
-						<li class="breadcrumb-item"><a href="#">Obilićev venac</a></li>
-						<li class="breadcrumb-item active">Plaćanje</li>
-					</ol>
-				</nav>
-				<h1 class="text-center mt-5">Kontakt</h1>
-				<p class="text-center text-secondary">Imate pitanje, problem ili predlog?</p>
-				<form class="col-md-6 mx-auto mt-5">
-					<div class="form-group">
-						<label>Broj kartice</label>
-						<input type="text" class="form-control" name="brojKartice">
+		</nav>
+		<nav>
+			<ul class="breadcrumb bg-transparent">
+				<li class="breadcrumb-item"><a href="home.html">Početna</a></li>
+				<li class="breadcrumb-item"><a href="details.html">Obilićev venac</a></li>
+				<li class="breadcrumb-item active">Plaćanje</li>
+			</ul>
+		</nav>
+		<div class="col-md-5 mx-auto mt-5">
+			<div class="row mb-3">
+				<h3 class="col-md-6 text-success">1.500 RSD</h3>
+				<img class="col-md-6 px-0" src="img/cards.png" height="35">
+			</div>
+			<form class="row">
+				<label class="col-md-4">Broj kartice</label>
+				<div class="form-group col-md-8 px-0">
+					<div class="row mx-0">
+						<div class="col-md-3 pl-0 pr-0">
+							<input type="text" class="form-control" name="brojKartice1">
+						</div>
+						<div class="col-md-3 pl-1 pr-0">
+							<input type="text" class="form-control" name="brojKartice2">
+						</div>
+						<div class="col-md-3 pl-1 pr-0">
+							<input type="text" class="form-control" name="brojKartice3">
+						</div>
+						<div class="col-md-3 pl-1 pr-0">
+							<input type="text" class="form-control" name="brojKartice4">
+						</div>
 					</div>
-					<div class="form-group">
-						<label>Vlasnik kartice</label>
-						<input type="text" class="form-control" name="vlasnikKartice">
-					</div>
-					<div class="form-row">
-						<div class="form-group col-md-6">
-							<label>Datum isteka</label>
+				</div>
+				<label class="col-md-4">Vlasnik kartice</label>
+				<div class="form-group col-md-8 px-0">
+					<input type="text" class="form-control" name="vlasnikKartice">
+				</div>
+				<label class="col-md-4">Datum isteka</label>
+				<div class="form-row col-md-8 mx-0 px-0">
+					<div class="row">
+						<div class="form-group col-md-5">
 							<input type="text" class="form-control" name="Datum isteka">
 						</div>
-						<div class="form-group col-md-6">
-							<label>CVC</label>
+						<label class="col-md-2">CVC</label>
+						<div class="form-group col-md-5">
 							<input type="text" class="form-control" name="CVC">
 						</div>
 					</div>
-					<a href="home.html">obrišite</a>
-					<button type="submit" class="btn btn-primary float-right">Platite</button>
-				</form>
-			</div>
-			<div class="col-md-3 bg-dark py-5">
-				<ul class="list-unstyled">
-					<li class="text-center mt-3">Email: <a href="mailto:office@parkirajse.rs">office@parkirajme.rs</a></li>
-					<li class="text-center mt-3">Telefon: <a href="tel:+38111123456">(+381) 11 123456</a></li>
-					<li class="text-center mt-3">Adresa: <a href="http://maps.google.com/?q=Kneza%20Mihaila%206,%20Beograd">Kneza Mihaila 6, Beograd</a></li>
-					<div class="map mt-3"></div>
-				</ul>
+				</div>
+				<a class="col-md-4 px-3" href="home.html">obrišite</a>
+				<button type="submit" class="btn btn-primary col-md-8 ml-auto">Platite</button>
+			</form>
+		</div>
+		<div class="alert alert-primary alert-dismissible fade show mb-0">
+			<h5 class="text-light">Kolačići</h5>
+			<div class="row">
+				<span class="col-md-9">
+					Nastavkom pretraživanja ove internet stranice slažete se da
+					ParkirajSe d.o.o. i njegovi partneri upotrebljavaju kolačiće
+					za analizu rada i efikasnost internet stranice.
+				</span>
+				<div class="col-md-3 ml-auto">
+					<button type="submit" class="btn btn-light" data-dismiss="alert">Prihvatite</button>
+					<a class="text-light ml-3" href="cookies.html">Više informacija</a>
+				</div>
 			</div>
 		</div>
 		<footer class="page-footer font-small bg-dark px-5 py-5">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-4">
-						<h5>ParkirajSe</h5>
+						<h5>ParkirajSe d.o.o.</h5>
 						<ul class="list-unstyled mt-4">
-							<li><a href="#">Karijera</a></li>
-							<li><a href="#">Strateški partneri</a></li>
+							<li><a href="careers.html">Karijera</a></li>
+							<li><a href="partners.html">Strateški partneri</a></li>
 							<li>MBR: 12983476</li>
 							<li>PIB: 987123654</li>
 						</ul>
@@ -80,16 +101,16 @@
 					<div class="col-md-4">
 						<h5>Pravno</h5>
 						<ul class="list-unstyled mt-4">
-							<li><a href="#">Upšti uslovi poslovanja</a></li>
-							<li><a href="#">Personalni podaci i kolačići</a></li>
-							<li><a href="#">Podešavanja privatnosti</a></li>
+							<li><a href="terms.html">Upšti uslovi poslovanja</a></li>
+							<li><a href="cookies.html">Personalni podaci i kolačići</a></li>
+							<li><a href="settings.html">Podešavanja privatnosti</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4">
 						<h5>Pratite nas</h5>
 						<ul class="list-unstyled list-inline mt-4">
 							<li class="list-inline-item mr-4"><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
-							<li class="list-inline-item mr-4"><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+							<li class="list-inline-item mr-4"><a href="#"><i class="fab fa-instagram-square fa-2x"></i></a></li>
 							<li class="list-inline-item mr-4"><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
 						</ul>
 					</div>

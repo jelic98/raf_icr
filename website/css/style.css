@@ -10,10 +10,6 @@
 	background-color: #41a9f4 !important;
 }
 
-.text-accent {
-	color: #41a9f4 !important;
-}
-
 .btn-primary {
 	color: #ffffff !important;
 	background-color: #41a9f4 !important;
@@ -23,7 +19,18 @@
 	background-color: #0e8fec !important;
 }
 
+.alert-primary {
+	background-color: #41a9f4 !important;
+	border: None !important;
+}
+
 .map {
 	height: 300px;
 	width: 100%;
+}
+
+html,
+body,
+.full-height {
+	height: 100%;
 }
