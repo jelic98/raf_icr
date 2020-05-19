@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="https://kit.fontawesome.com/6b41db18db.js"></script>
+		<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
 		<title>ParkirajSe</title>
 	</head>
 	<body class="bg-light text-light">
@@ -22,7 +23,7 @@
 				</ul>
 			</div>
 		</nav>
-		<div class="row mx-auto full-height">
+		<div class="row mx-auto h-100">
 			<div class="col-md-8">
 				<nav>
 					<ul class="breadcrumb bg-transparent pl-0">
@@ -72,11 +73,76 @@
 						</div>
 						<a class="col-md-4 px-3" href="home.html">obrišite</a>
 						<button type="submit" class="btn btn-primary col-md-8 ml-auto">Platite</button>
+					</form>
 				</div>
 			</div>
 			<div class="col-md-4 bg-dark">
+				<div class="row">
+					<h3 class="col-md-7">Obilićev venac</h3>
+					<h5 class="col-md-5 text-secondary">// garaža $$</h5>
+				</div>
+				<div class="row">
+					<h5 class="text-primary ml-3">
+						234
+						<span class="text-secondary">
+							slobodnih mesta
+						</span>
+					</h5>
+				</div>
+				<div class="h-25" id="histogram"></div>
+				<table class="table table-light table-hover mt-3">
+					<thead class="thead-dark">
+						<tr>
+							<th scope="col">Usluga</th>
+							<th scope="col">Cena (RSD)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">Započeti sat</th>
+							<td>120</td>
+						</tr>
+						<tr>
+							<th scope="row">Dnevna karta 00-24h</th>
+							<td>1.500</td>
+						</tr>
+						<tr>
+							<th scope="row">Mesečna pretplata</th>
+							<td>17.000</td>
+						</tr>
+						<tr>
+							<th scope="row">Godišnja pretplata</th>
+							<td>273.600</td>
+						</tr>
+					</tbody>
+				</table>
+				<form class="row">
+					<label class="col-md-5">Registracija</label>
+					<div class="form-group col-md-7">
+						<input type="text" class="form-control" name="registracija" value="BG 123 XY" disabled>
+					</div>
+					<label class="col-md-5">Datum početka</label>
+					<div class="form-group col-md-7">
+						<input type="text" class="form-control" name="datumPocetka" value="1 / 4 / 20" disabled>
+					</div>
+					<label class="col-md-5">Vreme početka</label>
+					<div class="form-group col-md-7">
+						<input type="text" class="form-control" name="vremePocetka" value="14 : 00" disabled>
+					</div>
+					<div class="form-group col-md-7 offset-md-5">
+						<a class="btn btn-primary col-md-12" href="details.html">Nazad</a>
+					</div>
+				</form>
 			</div>
 		</div>
+		<script>
+			var x = [];
+			for(var i = 0; i < 1000; i++) x[i] = Math.floor(Math.random() * 25);
+			Plotly.newPlot('histogram',
+				[{x: x, type: 'histogram', xbins: {start: 0,end: 24,size: 1}}],
+				{margin: {l: 20, r: 20, b: 20, t: 20}, showlegend: false},
+				{displayModeBar: false});
+		</script>
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
