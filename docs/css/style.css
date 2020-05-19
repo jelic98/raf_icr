@@ -55,3 +55,15 @@ html, body {
 .map {
 	width: 75%;
 }
+
+.tooltip-inner, .arrow {
+	visibility: hidden;
+}
+
+.tooltip-inner > img {
+	visibility: visible;
+}
+
+.tooltip-img {
+	height: 200px;
+}
