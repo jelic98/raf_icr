@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+		<title>ParkirajSe</title>
+	</head>
+	<body class="bg-light text-light">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="home.html"><img src="img/logo.png" height="50"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse text-center" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="home.html">Početna</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html">O nama</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="row mx-auto h-100">
+			<div class="col-md-8">
+				<nav>
+					<ul class="breadcrumb bg-transparent pl-0">
+						<li class="breadcrumb-item"><a href="home.html">Početna</a></li>
+						<li class="breadcrumb-item active">Obilićev venac</li>
+					</ul>
+				</nav>
+				<form class="row mt-5">
+					<div class="form-group col-md-4 offset-md-2 pl-0">
+						<input type="text" class="form-control" name="pretraga" placeholder="Pretraga" value="Oblićev venac" disabled>
+					</div>
+					<div class="form-group col-md-4 pr-0">
+						<div class="dropdown">
+							<button class="form-control btn btn-light dropdown-toggle" type="button" data-toggle="dropdown">Tip parkirališta</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Garaže</a>
+								<a class="dropdown-item" href="#">Parkirališta</a>
+								<a class="dropdown-item" href="#">Gareže i parkirališta</a>
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="row">
+					<div class="col-md-8 offset-md-2 map square"></div>
+				</div>
+				<div class="row offset-md-8 mt-3">
+					<h5 class="col-md-4 offset-md-4 text-right align-self-center pr-0">1.2 km</h5>
+					<div class="col-md-4 text-right pl-0">
+						<a class="btn btn-primary btn-circle btn-md" href="details.html">
+							<svg class="bi bi-cursor-fill"
+								 width="1em" height="1em"
+											 viewBox="0 0 16 16" fill="currentColor"
+																 xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M14.082 2.182a.5.5 0
+								01.103.557L8.528 15.467a.5.5 0 01-.917-.007L5.57
+								10.694.803 8.652a.5.5 0 01-.006-.916l12.728-5.657a.5.5 0
+								01.556.103z" clip-rule="evenodd"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 bg-dark">
+				<div class="row">
+					<h3 class="col-md-7">Obilićev venac</h3>
+					<h5 class="col-md-5 text-secondary">// garaža $$</h5>
+				</div>
+				<div class="row">
+					<h5 class="text-primary ml-3">
+						234
+						<span class="text-secondary">
+							slobodnih mesta
+						</span>
+					</h5>
+				</div>
+				<div class="h-25" id="histogram"></div>
+				<table class="table table-light table-hover mt-3">
+					<thead class="thead-dark">
+						<tr>
+							<th scope="col">Usluga</th>
+							<th scope="col">Cena (RSD)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">Započeti sat</th>
+							<td>120</td>
+						</tr>
+						<tr>
+							<th scope="row">Dnevna karta 00-24h</th>
+							<td>1.500</td>
+						</tr>
+						<tr>
+							<th scope="row">Mesečna pretplata</th>
+							<td>17.000</td>
+						</tr>
+						<tr>
+							<th scope="row">Godišnja pretplata</th>
+							<td>273.600</td>
+						</tr>
+					</tbody>
+				</table>
+				<form class="row">
+					<label class="col-md-5">Registracija</label>
+					<div class="form-group col-md-7">
+						<input type="text" class="form-control" name="registracija">
+					</div>
+					<label class="col-md-5">Datum početka</label>
+					<div class="form-group col-md-7">
+						<input type="text" class="form-control" name="datumPocetka">
+					</div>
+					<label class="col-md-5">Vreme početka</label>
+					<div class="form-group col-md-7">
+						<input type="text" class="form-control" name="vremePocetka">
+					</div>
+					<div class="form-group col-md-7 offset-md-5">
+						<a class="btn btn-primary col-md-12" href="payment.html">Rezervišite</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?callback=showParkingMap"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
