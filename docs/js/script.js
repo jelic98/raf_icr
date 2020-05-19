@@ -11,6 +11,10 @@ function showAddressMap() {
 }
 
 function showHistogram() {
+	if(typeof Plotly === 'undefined') {
+		return;
+	}
+
 	var x = [];
 
 	for(var i = 0; i < 1000; i++) {
@@ -35,7 +39,15 @@ function showTooltips() {
 	});
 }
 
+function showAlert() {
+	$('.alert-hide').hide();
+	$('.alert-toggle').click(function() {
+		$('.alert-hide').show();
+	})
+}
+
 $(function() {
 	showTooltips();
 	showHistogram();
+	showAlert();
 });
