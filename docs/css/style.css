@@ -67,3 +67,21 @@ html, body {
 .tooltip-img {
 	height: 200px;
 }
+
+.img-logo {
+	height: 50px;
+}
+
+.img-gallery {
+	height: 100px;
+}
+
+.img-cards {
+	height: 35px;
+}
+
+@media (min-width: 576px) {  
+	.img-gallery {
+		height: 150px;
+	}
+}
