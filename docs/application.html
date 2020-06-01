@@ -32,26 +32,38 @@
 		<div class="container my-5">
 			<h1 class="text-center mt-5">Prijava za posao</h1>
 			<div class="col-12 col-lg-6 mx-auto mt-5">
-				<form class="row">
+				<form class="row needs-validation" novalidate>
 					<label class="col-12 col-sm-4 px-0">Ime i prezime</label>
 					<div class="form-group col-12 col-sm-8 px-0">
-						<input type="text" class="form-control" name="imePrezime">
+						<input type="text" class="form-control" name="imePrezime" required>
+						<div class="invalid-feedback">
+							Popunite obavezno polje
+						</div>
 					</div>
 					<label class="col-12 col-sm-4 px-0">Email</label>
 					<div class="form-group col-12 col-sm-8 px-0">
-						<input type="text" class="form-control" name="email">
+						<input type="text" class="form-control" name="email" required>
+						<div class="invalid-feedback">
+							Popunite obavezno polje
+						</div>
 					</div>
 					<label class="col-12 col-sm-4 px-0">CV</label>
 					<div class="custom-file col-12 col-sm-8 mb-3 px-0">
-						<input type="file" class="custom-file-input" name="cv">
+						<input type="file" class="custom-file-input" name="cv" required>
 						<label class="custom-file-label"></label>
+						<div class="invalid-feedback">
+							Popunite obavezno polje
+						</div>
 					</div>
 					<label class="col-12 col-sm-4 px-0">Pismo</label>
 					<div class="form-group col-12 col-sm-8 px-0">
-						<textarea class="form-control" rows="3" name="pismo"></textarea>
+						<textarea class="form-control" rows="3" name="pismo" required></textarea>
+						<div class="invalid-feedback">
+							Popunite obavezno polje
+						</div>
 					</div>	
 					<a class="col-6 col-sm-4 px-0" href="application.html">obrišite</a>
-					<a class="alert-toggle btn btn-primary col-6 col-sm-8 ml-auto">Pošaljite</a>
+					<button class="btn btn-primary col-6 col-sm-8 ml-auto alert-toggle" type="submit">Pošaljite</button>
 				</form>
 			</div>
 		</div>

@@ -36,42 +36,66 @@
 						<h3 class="col-5 col-sm-6 text-success px-0">1.500 RSD</h3>
 						<img class="col-7 col-sm-6 px-0 img-cards" src="img/cards.png">
 					</div>
-					<form class="row pb-3">
+					<form class="row pb-3 needs-validation" novalidate>
 						<label class="col-12 col-sm-4 px-0">Broj kartice</label>
 						<div class="form-group col-12 col-sm-8 px-0">
 							<div class="row mx-0">
 								<div class="col-3 col-sm-3 pl-0 pr-0">
-									<input type="text" class="form-control" name="brojKartice1" data-toggle="tooltip" data-tooltip="img/card-number.jpg">
+									<input type="text" class="form-control" name="brojKartice1" data-toggle="tooltip" data-tooltip="img/card-number.jpg" required>
+									<div class="invalid-feedback">
+										Popunite obavezno polje
+									</div>
 								</div>
 								<div class="col-3 col-sm-3 pl-1 pr-0">
-									<input type="text" class="form-control" name="brojKartice2">
+									<input type="text" class="form-control" name="brojKartice2" required>
+									<div class="invalid-feedback">
+										Popunite obavezno polje
+									</div>
 								</div>
 								<div class="col-3 col-sm-3 pl-1 pr-0">
-									<input type="text" class="form-control" name="brojKartice3">
+									<input type="text" class="form-control" name="brojKartice3" required>
+									<div class="invalid-feedback">
+										Popunite obavezno polje
+									</div>
 								</div>
 								<div class="col-3 col-sm-3 pl-1 pr-0">
-									<input type="text" class="form-control" name="brojKartice4">
+									<input type="text" class="form-control" name="brojKartice4" required>
+									<div class="invalid-feedback">
+										Popunite obavezno polje
+									</div>
 								</div>
 							</div>
 						</div>
 						<label class="col-12 col-sm-4 px-0">Vlasnik kartice</label>
 						<div class="form-group col-12 col-sm-8 px-0">
-							<input type="text" class="form-control" name="vlasnikKartice" data-toggle="tooltip" data-tooltip="img/card-owner.jpg">
+							<input type="text" class="form-control"
+							name="vlasnikKartice" data-toggle="tooltip" data-tooltip="img/card-owner.jpg" required>
+							<div class="invalid-feedback">
+								Popunite obavezno polje
+							</div>
 						</div>
 						<label class="col-12 col-sm-4 px-0">Datum isteka</label>
 						<div class="form-row col-12 col-sm-8 mx-0 px-0">
 							<div class="row">
 								<div class="form-group col-12 col-sm-5">
-									<input type="text" class="form-control" name="Datum isteka" data-toggle="tooltip" data-tooltip="img/card-date.jpg">
+									<input type="text" class="form-control"
+									name="Datum isteka" data-toggle="tooltip" data-tooltip="img/card-date.jpg" required>
+									<div class="invalid-feedback">
+										Popunite obavezno polje
+									</div>
 								</div>
 								<label class="col-12 col-sm-2">CVC</label>
 								<div class="form-group col-12 col-sm-5">
-									<input type="text" class="form-control" name="CVC" data-toggle="tooltip" data-tooltip="img/card-cvc.jpg">
+									<input type="text" class="form-control"
+									name="CVC" data-toggle="tooltip" data-tooltip="img/card-cvc.jpg" required>
+									<div class="invalid-feedback">
+										Popunite obavezno polje
+									</div>
 								</div>
 							</div>
 						</div>
 						<a class="col-6 col-sm-4 px-0" href="home.html">obrišite</a>
-						<a class="col-6 alert-toggle btn btn-primary col-sm-8 ml-auto">Platite</a>
+						<button class="btn btn-primary col-6 col-sm-8 ml-auto alert-toggle" type="submit">Platite</button>
 					</form>
 				</div>
 			</div>

@@ -26,21 +26,30 @@
 				<h1 class="text-center mt-5">Kontakt</h1>
 				<p class="text-center text-light">Imate pitanje, problem ili predlog?</p>
 				<div class="col-12 col-sm-8 mx-auto mt-5">
-					<form class="row">
+					<form class="row needs-validation" novalidate>
 						<label class="col-12 col-sm-4 px-0">Ime i prezime</label>
 						<div class="form-group col-12 col-sm-8 px-0">
-							<input type="text" class="form-control" name="imePrezime">
+							<input type="text" class="form-control" name="imePrezime" required>
+							<div class="invalid-feedback">
+								Popunite obavezno polje
+							</div>
 						</div>
 						<label class="col-12 col-sm-4 px-0">Email</label>
 						<div class="form-group col-12 col-sm-8 px-0">
-							<input type="text" class="form-control" name="email">
+							<input type="text" class="form-control" name="email" required>
+							<div class="invalid-feedback">
+								Popunite obavezno polje
+							</div>
 						</div>
 						<label class="col-12 col-sm-4 px-0">Poruka</label>
 						<div class="form-group col-12 col-sm-8 px-0">
-							<textarea class="form-control" rows="3" name="poruka"></textarea>
+							<textarea class="form-control" rows="3" name="poruka" required></textarea>
+							<div class="invalid-feedback">
+								Popunite obavezno polje
+							</div>
 						</div>	
 						<a class="col-6 col-sm-4 px-0" href="contact.html">obrišite</a>
-						<a class="alert-toggle btn btn-primary col-6 col-sm-8 ml-auto">Pošaljite</a>
+						<button class="btn btn-primary col-6 col-sm-8 ml-auto alert-toggle" type="submit">Pošaljite</button>
 					</form>
 				</div>
 			</div>
